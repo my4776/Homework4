@@ -24,5 +24,10 @@ public class MainActivity extends AppCompatActivity {
     public void Albert(View view) {
         growUp++;
         btn.setText("This is a click number: "+growUp);
+        if (growUp==6)
+        {
+            btn.setText("Enough to click. Go to new start!");
+            growUp = 0;
+        }
     }
 }
