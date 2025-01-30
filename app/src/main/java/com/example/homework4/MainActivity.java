@@ -12,15 +12,17 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
     Button btn;
-
+    int growUp;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         btn.findViewById(R.id.btn);
+        growUp = 0;
     }
 
     public void Albert(View view) {
-        btn.setText("Oh, yea, I’ve been clicked!");
+        growUp++;
+        btn.setText("This is a click number: "+growUp);
     }
 }
